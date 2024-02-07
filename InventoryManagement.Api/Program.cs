@@ -1,6 +1,13 @@
+using InventoryManagement.Application;
+using InventoryManagement.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 {
+    builder.Logging.AddConsole();
+    builder.Services.AddApplication();
+    builder.Services.AddInfrastructure(builder.Configuration);
     builder.Services.AddControllers();
+
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 }
