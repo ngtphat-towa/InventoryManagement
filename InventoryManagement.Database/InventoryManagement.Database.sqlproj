@@ -56,5 +56,13 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\User.sql" />
+    <Build Include="dbo\Role.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="InventoryManagement.Database.refactorlog" />
   </ItemGroup>
 </Project>
