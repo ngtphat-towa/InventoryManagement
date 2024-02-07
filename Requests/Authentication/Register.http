@@ -1,0 +1,16 @@
+@Host = https://localhost:7159
+
+POST {{Host}}/auth/register 
+Content-Type: application/json
+
+{
+    "firstName": "Phat",
+    "lastName" : "Nguyen",
+    "email": "ngtphat.towa@gmail.com",
+    "password": "Password123",
+    "phoneNumber" :"033-3-13-13"
+}
+
+
+
+
